@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Partidas Rankeadas</title>
+    <link rel="stylesheet" href="./sources/styles/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="game-title">Ranked Game Stats</h1>
+        <div class="game-form">
+            <form id="rankForm">
+                <label for="vit">🏆 Vitórias:</label>
+                <input type="number" id="vit" name="vit" required placeholder="Digite suas vitórias">
+                <label for="der">💀 Derrotas:</label>
+                <input type="number" id="der" name="der" required placeholder="Digite suas derrotas">
+                <button type="button" class="game-button" onclick="exibirResultado()">Calcular</button>
+            </form>
+        </div>
+        <div id="resultado" class="game-result"></div>
+    </div>
+    <script src="./sources/scripts/scripts.js"></script>
+</body>
+</html>
